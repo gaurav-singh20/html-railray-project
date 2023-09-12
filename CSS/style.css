@@ -1,0 +1,177 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 4px 30px;
+    
+}
+
+#logo img{
+    height:85px;
+    margin: 3px 6px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar{
+    position: relative;
+}
+
+#navbar ul{
+    display: flex;
+    
+}
+
+#navbar::before{
+    content:"";
+    background-color: rgb(21, 67, 85);
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Selection*/
+#home::before{
+    content:"";
+    background: url('bgd.jpeg') no-repeat center center/cover;
+    position: absolute;
+    height: 170%; 
+    width:100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}  
+
+/* Holidays Section */
+#holidays{
+  margin: 34px;
+  
+  display: flex;
+}
+#holidays .box{ 
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 2px 55px;
+  position:relative;
+  top:  500px;
+  border-radius: 28px;
+  background: #f2f2f2;
+  margin-bottom: 20px;
+}
+#holidays .box img{ 
+  height: 160px;
+  margin: auto;
+  display: block;
+}
+
+#holidays .box p{
+   font-family: 'Bree Serif', serif;
+
+} 
+
+.h-primary center{
+    position:absolute;
+    left:600px;
+    top:580px;
+    color:rgb(233, 101, 49) ;
+     
+}
+
+/* Ticket Section */
+#ticket{
+    position: relative;
+}
+#ticket::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('img/../contact.jpg') no-repeat center center/cover;
+
+}
+
+#ticket-box{
+    display: flex;
+    position: absolute;
+    width:500px;
+    top:-520px;
+    left:75px;
+    padding-bottom: 34px;
+}
+#ticket-box input, 
+#ticket-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+#ticket-box form{
+    width: 40%;
+}
+
+#ticket-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+.btn{
+    padding: 6px 20px;
+    position:absolute;
+    left: 30px;
+    border: 2px solid white;
+    background-color: rgb(42, 165, 149);
+    color: white;
+    margin: 17px;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.footer{
+    position: absolute;
+    bottom: -600px;
+    left: 0;
+    right: 0;
+    height:20px;
+    background:rgb(10, 9, 9);
+}
+
+ 
